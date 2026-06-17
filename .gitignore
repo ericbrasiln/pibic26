@@ -1,0 +1,11 @@
+# Quarto artifacts
+*_files/
+*.aux
+*.log
+*.tex
+*.toc
+*.out
+chamada.md
+
+# Source PDFs in fontes/ (not needed in repo)
+fontes/

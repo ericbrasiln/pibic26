@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Eric Brasil">
+<meta name="description" content="Chamada para seleção de 2 bolsistas PIBIC/FAPESB para o projeto PVM2451-2026, com dois planos de trabalho: (1) Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG; (2) Modelagem relacional e construção de Knowledge Graphs para análise de narrativas de negacionismo histórico em plataformas digitais.">
+
+<title> Chamada para Seleção de Bolsistas PIBIC/FAPESB — Edital PROPPG 08/2026</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-f79c7fb6db380d32be398468f2fb58cf.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-f79c7fb6db380d32be398468f2fb58cf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-f79c7fb6db380d32be398468f2fb58cf.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-996d3777abbb2bf03f6ecee9538e3960.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark-95cf41f94dfaed2f9f7273701b048e70.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="index_files/libs/bootstrap/bootstrap-996d3777abbb2bf03f6ecee9538e3960.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sumário</h2>
+   
+  <ul>
+  <li><a href="#informações-gerais" id="toc-informações-gerais" class="nav-link active" data-scroll-target="#informações-gerais"><span class="header-section-number">1</span> 1. Informações Gerais</a></li>
+  <li><a href="#requisitos-para-a-candidatura" id="toc-requisitos-para-a-candidatura" class="nav-link" data-scroll-target="#requisitos-para-a-candidatura"><span class="header-section-number">2</span> 2. Requisitos para a candidatura</a></li>
+  <li><a href="#perfil-esperado" id="toc-perfil-esperado" class="nav-link" data-scroll-target="#perfil-esperado"><span class="header-section-number">3</span> 3. Perfil esperado</a></li>
+  <li><a href="#processo-de-seleção" id="toc-processo-de-seleção" class="nav-link" data-scroll-target="#processo-de-seleção"><span class="header-section-number">4</span> 4. Processo de Seleção</a></li>
+  <li><a href="#cronograma" id="toc-cronograma" class="nav-link" data-scroll-target="#cronograma"><span class="header-section-number">5</span> 5. Cronograma</a></li>
+  <li><a href="#detalhes-dos-planos-de-trabalho" id="toc-detalhes-dos-planos-de-trabalho" class="nav-link" data-scroll-target="#detalhes-dos-planos-de-trabalho"><span class="header-section-number">6</span> 6. Detalhes dos Planos de Trabalho</a>
+  <ul>
+  <li><a href="#plano-1-curadoria-de-corpus-e-análise-de-negacionismo-histórico-no-ecossistema-telegram-youtube-com-social-rag" id="toc-plano-1-curadoria-de-corpus-e-análise-de-negacionismo-histórico-no-ecossistema-telegram-youtube-com-social-rag" class="nav-link" data-scroll-target="#plano-1-curadoria-de-corpus-e-análise-de-negacionismo-histórico-no-ecossistema-telegram-youtube-com-social-rag"><span class="header-section-number">6.1</span> Plano 1 — Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG</a></li>
+  <li><a href="#plano-2-modelagem-relacional-e-construção-de-knowledge-graphs-para-análise-de-narrativas-de-negacionismo-histórico-em-plataformas-digitais" id="toc-plano-2-modelagem-relacional-e-construção-de-knowledge-graphs-para-análise-de-narrativas-de-negacionismo-histórico-em-plataformas-digitais" class="nav-link" data-scroll-target="#plano-2-modelagem-relacional-e-construção-de-knowledge-graphs-para-análise-de-narrativas-de-negacionismo-histórico-em-plataformas-digitais"><span class="header-section-number">6.2</span> Plano 2 — Modelagem relacional e construção de Knowledge Graphs para análise de narrativas de negacionismo histórico em plataformas digitais</a></li>
+  </ul></li>
+  <li><a href="#informações-sobre-a-modalidade-pibicfapesb" id="toc-informações-sobre-a-modalidade-pibicfapesb" class="nav-link" data-scroll-target="#informações-sobre-a-modalidade-pibicfapesb"><span class="header-section-number">7</span> 7. Informações sobre a modalidade PIBIC/FAPESB</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><img src="./logo.png" class="img-fluid"><br><br>Chamada para Seleção de Bolsistas PIBIC/FAPESB — Edital PROPPG 08/2026</h1>
+<p class="subtitle lead">Projeto: Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma</p>
+</div>
+
+<div>
+  <div class="description">
+    Chamada para seleção de 2 bolsistas PIBIC/FAPESB para o projeto PVM2451-2026, com dois planos de trabalho: (1) Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG; (2) Modelagem relacional e construção de Knowledge Graphs para análise de narrativas de negacionismo histórico em plataformas digitais.
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Autor</div>
+  <div class="quarto-title-meta-heading">Afiliação</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Eric Brasil </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Instituto de Humanidades e Letras, Universidade da Integração da Lusofonia Afro-brasileira (UNILAB)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">16 de junho de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="informações-gerais" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="informações-gerais"><span class="header-section-number">1</span> 1. Informações Gerais</h2>
+<p>A Coordenação do projeto de pesquisa <strong>PVM2451-2026</strong> — <em>“Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma”</em> convida estudantes de graduação do Instituto de Humanidades e Letras da UNILAB a se candidatarem a <strong>2 (duas) vagas de bolsista de Iniciação Científica</strong> no âmbito do Edital PROPPG nº 08/2026 — PIBIC/FAPESB.</p>
+<p>O projeto foi aprovado com 2 cotas de bolsa FAPESB, cada uma vinculada a um plano de trabalho distinto. A seleção é unificada: a candidatura é feita para o projeto, e a atribuição dos planos ocorrerá conforme o perfil e a adequação de cada pessoa selecionada.</p>
+<p><strong>Título do Projeto:</strong> <em>Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma</em></p>
+<p><strong>Planos de Trabalho:</strong></p>
+<ol type="1">
+<li><strong>Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG</strong></li>
+<li><strong>Modelagem relacional e construção de Knowledge Graphs para análise de narrativas de negacionismo histórico em plataformas digitais</strong></li>
+</ol>
+<ul>
+<li><p><strong>Modalidade:</strong> PIBIC/FAPESB</p></li>
+<li><p><strong>Vigência:</strong> 01/10/2026 a 30/09/2027</p></li>
+<li><p><strong>Valor da bolsa:</strong> R$ 700,00/mês</p></li>
+<li><p><strong>Carga horária:</strong> 20h semanais</p></li>
+<li><p><strong>Orientador:</strong> Prof.&nbsp;Eric Brasil Nepomuceno (IHL/UNILAB)</p></li>
+<li><p><strong>Laboratórios envolvidos:</strong> IHL/UNILAB (Malês) e LABHDUFBA (UFBA)</p></li>
+<li><p><strong>Financiamento:</strong> Projeto vinculado ao edital CNPq/Decit/SECTICS/MS nº 30/2024 — Eixo I: Gestão da Infodemia (Processo 442958/2024-2)</p></li>
+<li><p><a href="./projeto_pesquisa.pdf">Clique aqui</a> para acessar o projeto de pesquisa completo.</p></li>
+<li><p><a href="./plano01.pdf">Clique aqui</a> para acessar o plano de trabalho 1 (Social-RAG).</p></li>
+<li><p><a href="./plano02.pdf">Clique aqui</a> para acessar o plano de trabalho 2 (Knowledge Graphs).</p></li>
+</ul>
+<hr>
+</section>
+<section id="requisitos-para-a-candidatura" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="requisitos-para-a-candidatura"><span class="header-section-number">2</span> 2. Requisitos para a candidatura</h2>
+<ol type="1">
+<li>Estar regularmente matriculado(a) em curso de graduação do Instituto de Humanidades e Letras da UNILAB, <strong>no campus da Bahia</strong> (requisito da modalidade PIBIC/FAPESB).</li>
+<li>Ter coeficiente de rendimento acadêmico (CRA) <strong>≥ 7,0</strong>.</li>
+<li>Não ter vínculo empregatício nem outra bolsa acadêmica (exceto auxílios estudantis como PNAES).</li>
+<li>Dedicar <strong>20 horas semanais</strong> às atividades da pesquisa.</li>
+<li>Disponibilidade para <strong>reuniões presenciais quinzenais em Salvador (LABHDUFBA/UFBA)</strong> — obrigatório.</li>
+<li>Desenvolver o <strong>Trabalho de Conclusão de Curso (TCC)</strong> vinculado à pesquisa, sob orientação do Prof.&nbsp;Eric Brasil.</li>
+<li>Compromisso com a realização de <strong>trabalho em equipe</strong>, com supervisão direta do orientador e interação com mestrandos e doutorandos vinculados ao projeto.</li>
+<li>Currículo Lattes cadastrado e atualizado no ano de 2026.</li>
+<li>Disponibilidade para cadastro como Pesquisador FAPESB (siga.fapesb.ba.gov.br) e no SEI Bahia, em caso de seleção.</li>
+</ol>
+<hr>
+</section>
+<section id="perfil-esperado" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="perfil-esperado"><span class="header-section-number">3</span> 3. Perfil esperado</h2>
+<p>Buscamos estudantes <strong>proativos, abertos a aprender e dispostos a trabalhar em equipe</strong>. A pesquisa é interdisciplinar e envolve tanto análise crítica de fontes historiográficas quanto ferramentas computacionais. A supervisão contar com mestrandos e doutorandos vinculados ao projeto, o que exige colaboração e capacidade de aprender com pares mais experientes.</p>
+<ul>
+<li>Interesse em ferramentas e métodos digitais aplicados às humanidades e ciências sociais.</li>
+<li><strong>Proatividade</strong> na busca por soluções e no autodidatismo guiado.</li>
+<li><strong>Abertura para aprender</strong> métodos e ferramentas novas, mesmo fora da área de formação.</li>
+<li>Capacidade de <strong>trabalho em equipe multidisciplinar</strong>, com supervisão de mestrandos e doutorandos.</li>
+<li>Compromisso com prazos e demandas regulares.</li>
+<li>Responsabilidade no tratamento de <strong>dados públicos digitais</strong>, seguindo protocolos éticos e LGPD.</li>
+<li>Respeito, empatia e tolerância.</li>
+</ul>
+<p><strong>Preferencialmente:</strong></p>
+<ul>
+<li>Conhecimento básico de Python ou outra linguagem de programação.</li>
+<li>Inglês instrumental para leitura de literatura.</li>
+<li>Estar cursando História, Ciências Sociais ou Computação.</li>
+</ul>
+<hr>
+</section>
+<section id="processo-de-seleção" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="processo-de-seleção"><span class="header-section-number">4</span> 4. Processo de Seleção</h2>
+<p><strong>Etapa 1 (eliminatória):</strong> Análise de documentos — carta de interesse, histórico escolar, currículo Lattes atualizado e comprovante de CRA. Verificação dos requisitos obrigatórios (matrícula na Bahia, CRA ≥ 7,0, disponibilidade para reuniões presenciais e TCC vinculado).</p>
+<p><strong>Etapa 2 (classificatória):</strong> Entrevista online (Google Meet) com o orientador e membros da equipe de pesquisa. A entrevista avaliará:</p>
+<ul>
+<li>Motivação e disponibilidade real para a carga horária exigida.</li>
+<li>Perfil colaborativo e abertura para aprender.</li>
+<li>Adequação ao perfil de cada plano de trabalho.</li>
+<li>Capacidade de trabalhar sob supervisão de mestrandos e doutorandos.</li>
+</ul>
+<p>A atribuição dos planos de trabalho (1 — Social-RAG ou 2 — Knowledge Graphs) será definida pelo orientador com base no perfil da pessoa selecionada e nas necessidades do projeto.</p>
+<hr>
+</section>
+<section id="cronograma" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="cronograma"><span class="header-section-number">5</span> 5. Cronograma</h2>
+<ul>
+<li><strong>Abertura da chamada</strong>: <strong>19/06/2026</strong></li>
+<li><strong>Inscrições</strong>: até <strong>26/06/2026, 23h59</strong>
+<ul>
+<li>Enviar os seguintes documentos para <a href="mailto:profericbrasil@unilab.edu.br">profericbrasil@unilab.edu.br</a>:
+<ul>
+<li>Carta de interesse (.md, .txt, .odt ou .pdf) — explicando motivação, disponibilidade e preferência de plano (se houver)</li>
+<li>Histórico escolar (PDF)</li>
+<li>Comprovante de CRA (PDF)</li>
+<li>Currículo Lattes atualizado (PDF)</li>
+</ul></li>
+</ul></li>
+<li><strong>Resultado da 1ª fase (eliminatória)</strong>: <strong>29/06/2026, até 18h</strong></li>
+<li><strong>Entrevistas</strong>: <strong>Data a ser divulgada após a 1ª fase</strong> (via Google Meet; horário a confirmar conforme número de classificados)</li>
+<li><strong>Resultado final</strong>: <strong>A ser divulgado após as entrevistas</strong></li>
+<li><strong>Entrega da documentação completa para implementação da bolsa (conforme edital institucional)</strong>: <strong>29/06 a 14/07/2026</strong></li>
+</ul>
+<blockquote class="blockquote">
+<p>⚠️ <strong>Atenção:</strong> O cronograma é comprimido em razão do prazo de indicação documental FAPESB estabelecido pelo edital PROPPG 08/2026 (item 10.2). A não entrega da documentação completa no prazo implica perda da cota de bolsa.</p>
+</blockquote>
+<hr>
+</section>
+<section id="detalhes-dos-planos-de-trabalho" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="detalhes-dos-planos-de-trabalho"><span class="header-section-number">6</span> 6. Detalhes dos Planos de Trabalho</h2>
+<section id="plano-1-curadoria-de-corpus-e-análise-de-negacionismo-histórico-no-ecossistema-telegram-youtube-com-social-rag" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="plano-1-curadoria-de-corpus-e-análise-de-negacionismo-histórico-no-ecossistema-telegram-youtube-com-social-rag"><span class="header-section-number">6.1</span> Plano 1 — Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG</h3>
+<p>O plano tem como objetivo realizar a curadoria de subconjuntos temáticos do corpus Telegram-YouTube e aplicar a arquitetura Social-RAG para identificar e analisar padrões discursivos, enquadramentos narrativos e estratégias argumentativas do negacionismo histórico em ecossistemas digitais multiplataforma.</p>
+<p><strong>Atividades principais:</strong></p>
+<ul>
+<li>Identificação e mapeamento de canais e grupos do Telegram que mobilizam narrativas de negacionismo histórico, bem como os vídeos do YouTube vinculados.</li>
+<li>Seleção, organização e padronização de subconjuntos temáticos do corpus segundo o protocolo do Social-RAG.</li>
+<li>Formulação e execução de consultas hermenêuticas e factuais no Social-RAG.</li>
+<li>Análise qualitativa dos resultados, com construção de categorias analíticas fundamentadas nos dados.</li>
+<li>Redação de artigo acadêmico como primeiro autor(a).</li>
+<li>Apresentação de resultados no Encontro de Iniciação Científica da UNILAB.</li>
+</ul>
+<p><strong>Capacitação prevista:</strong> Python, Git/GitHub e operação do Social-RAG (3 primeiros meses).</p>
+</section>
+<section id="plano-2-modelagem-relacional-e-construção-de-knowledge-graphs-para-análise-de-narrativas-de-negacionismo-histórico-em-plataformas-digitais" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="plano-2-modelagem-relacional-e-construção-de-knowledge-graphs-para-análise-de-narrativas-de-negacionismo-histórico-em-plataformas-digitais"><span class="header-section-number">6.2</span> Plano 2 — Modelagem relacional e construção de Knowledge Graphs para análise de narrativas de negacionismo histórico em plataformas digitais</h3>
+<p>O plano tem como objetivo desenvolver e aplicar módulos de Knowledge Graphs integrados ao pipeline Social-RAG para modelar relações entre entidades (atores, eventos históricos, organizações, fontes, vídeos) e visualizar as redes de referência mobilizadas nas narrativas de negacionismo histórico.</p>
+<p><strong>Atividades principais:</strong></p>
+<ul>
+<li>Identificação e definição das entidades de interesse e das relações relevantes no corpus sobre negacionismo histórico.</li>
+<li>Elaboração de esquemas de representação relacional, com tipologias de nós e arestas.</li>
+<li>Extração de entidades e relações a partir de mensagens do Telegram e transcrições de vídeos do YouTube, utilizando ferramentas de NLP e o Social-RAG como apoio.</li>
+<li>Construção de Knowledge Graphs exploratórios e produção de visualizações interativas.</li>
+<li>Avaliação crítica da utilidade e dos limites dos Knowledge Graphs para a análise histórica.</li>
+<li>Redação de artigo acadêmico como primeiro autor(a).</li>
+<li>Apresentação de resultados no Encontro de Iniciação Científica da UNILAB.</li>
+</ul>
+<p><strong>Capacitação prevista:</strong> Python, Git/GitHub, NetworkX, Neo4j e ferramentas de NLP (3 primeiros meses).</p>
+<hr>
+</section>
+</section>
+<section id="informações-sobre-a-modalidade-pibicfapesb" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="informações-sobre-a-modalidade-pibicfapesb"><span class="header-section-number">7</span> 7. Informações sobre a modalidade PIBIC/FAPESB</h2>
+<p>A bolsa PIBIC/FAPESB é fomentada pela Fundação de Amparo à Pesquisa do Estado da Bahia (FAPESB) e destina-se a estudantes de graduação cursando no estado da Bahia. Os requisitos específicos da modalidade incluem:</p>
+<ul>
+<li>Estar regularmente matriculado(a) e cursando graduação <strong>no estado da Bahia</strong>.</li>
+<li>Cadastro como Pesquisador FAPESB (siga.fapesb.ba.gov.br).</li>
+<li>Cadastro no SEI Bahia.</li>
+<li>Conta corrente no Banco do Brasil (para depósito da bolsa).</li>
+<li>Currículo Lattes atualizado no ano da implementação da bolsa.</li>
+<li>Não acumular outra bolsa de mesmo nível financiada com recursos públicos durante a vigência.</li>
+<li>Entregar relatório parcial (01/04/2027) e relatório final (01/10/2027) via SIGAA.</li>
+<li>Apresentar os resultados da pesquisa no Evento de Iniciação Científica da UNILAB.</li>
+</ul>
+<p>Para dúvidas: <a href="mailto:profericbrasil@unilab.edu.br">profericbrasil@unilab.edu.br</a></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
