@@ -1,0 +1,254 @@
+---
+title: "Projeto de Pesquisa — PVM2451-2026"
+subtitle: "Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma"
+author: Eric Brasil Nepomuceno
+date: 2026-06-16
+lang: pt-BR
+institute: "Instituto de Humanidades e Letras, Universidade da Integração da Lusofonia Afro-brasileira (UNILAB)"
+toc: true
+toc-title: "Sumário"
+toc-depth: 4
+number-sections: true
+theme: 
+  light: default
+  dark: darkly
+highlight-style: tango
+---
+
+Resumo
+Este projeto propõe investigar as dinâmicas de negacionismo histórico em ecossistemas digitais multiplataforma, com foco no Telegram e no
+YouTube, empregando ferramentas de Inteligência Artificial (IA)  especificamente arquiteturas de Retrieval-Augmented Generation (RAG) e
+Knowledge Graphs  para a análise de grandes volumes de dados textuais e audiovisuais. A pesquisa está inserida no projeto financiado
+"Ecossistemas multiplataforma e ataques à integridade da informação em saúde: impactos, padrões de disseminação e estratégias de mitigação"
+(CNPq/Decit/SECTICS/MS nº 30/2024, Processo 442958/2024-2), coordenado pelo Instituto de Saúde Coletiva (ISC) e pelo Laboratório de
+Humanidades Digitais da UFBA (LABHDUFBA), com participação ativa da UNILAB. A proposta avança sobre os resultados do projeto PIBIC
+2025, em execução, que desenvolveu infraestrutura de coleta e análise de dados sobre desinformação em saúde, e aplica a arquitetura Social-
+RAG, desenvolvida e validada pela equipe, para investigar como narrativas negacionistas sobre eventos históricos  como a ditadura militar
+brasileira, a escravidão e o holocausto  são mobilizadas em canais e grupos extremistas para legitimar discursos antidemocráticos. O projeto
+opera sobre uma base de dados robusta que inclui dezenas de terabytes de mensagens do Telegram e mais de 600 mil vídeos do YouTube (com
+metadados, transcrições e resumos), extraídos a partir dos links compartilhados nos próprios canais do Telegram  evidenciando a articulação
+multiplataforma desses ecossistemas. O projeto articula métodos computacionais com a reflexão crítica das Humanidades Digitais, promovendo a
+formação de estudantes da UNILAB em letramento digital, métodos digitais e análise crítica de dados.
+Introdução/Justificativa
+(incluindo os benefícios esperados no processo ensino-aprendizagem e o retorno para os cursos e para os professores da UNILAB em geral)
+A disseminação de narrativas negacionistas em plataformas digitais constitui um dos desafios mais prementes para as democracias
+contemporâneas. O negacionismo histórico  entendido como a distorção, minimização ou negação deliberada de eventos históricos
+documentados  tem encontrado nas plataformas de mensageria e vídeo  com destaque para Telegram e YouTube  um terreno fértil para sua
+circulação e amplificação. Pesquisas recentes demonstram que o aplicativo Telegram, em particular, tornou-se um ambiente privilegiado para a
+articulação de grupos extremistas que mobilizam narrativas negacionistas como parte de estratégias mais amplas de radicalização política e
+desinformação (NASCIMENTO et al., 2023; ROGERS, 2020; URMAN; KATZ, 2022). Esses grupos operam em lógica multiplataforma: o Telegram
+funciona como espaço de coordenação e disseminação de links, enquanto o YouTube serve como plataforma de produção e consumo de
+conteúdo audiovisual de longa duração, onde narrativas negacionistas são elaboradas com maior sofisticação retórica e alcance de audiência.
+No contexto brasileiro, a instrumentalização do passado por grupos de extrema direita intensificou-se a partir de 2019, com a ocupação do
+Telegram por influenciadores e lideranças políticas que promovem revisionismos sobre a ditadura militar (1964-1985), relativizam a violência do
+regime e mobilizam simbologias históricas para reforçar agendas antidemocráticas (CESARINO, 2022; NASCIMENTO et al., 2024). Esse
+fenômeno não se restringe ao cenário nacional: pesquisas apontam convergências transnacionais nos processos de radicalização, com grupos
+de diferentes países compartilhando narrativas negacionistas que transcendem barreiras linguísticas e culturais (TÖRNBERG; CHUERI, 2025;
+WALTHER; MCCOY, 2021).
+A escala e a velocidade de produção desses conteúdos  que envolvem texto, imagens, vídeos e áudio  impõem desafios metodológicos
+significativos para as ciências humanas e sociais. Como apontam Grimmer, Roberts e Stewart (2022), os métodos tradicionais de análise
+qualitativa, embora indispensáveis para a interpretação contextualizada, tornam-se insuficientes diante de corpora que ultrapassam a capacidade
+de leitura exaustiva dos pesquisadores. Ao mesmo tempo, a adoção acrítica de métodos computacionais, sem o devido controle epistemológico,
+pode resultar tanto na impossibilidade prática de análise quanto em uma falsa sensação de objetividade (BOYD; CRAWFORD, 2012;
+SCHWANDT, 2022).
+É nesse contexto que a presente proposta se situa, articulando o campo das Humanidades Digitais com os avanços recentes em Inteligência
+Artificial. As Humanidades Digitais, enquanto campo interdisciplinar, oferecem um enquadramento teórico-metodológico que valoriza tanto o rigor
+computacional quanto a reflexividade crítica das ciências humanas (BRASIL; NASCIMENTO, 2022; LUPTON, 2015; MARRES, 2017). A proposta
+mobiliza, especificamente, arquiteturas de Retrieval-Augmented Generation (RAG)  sistemas que combinam recuperação de informação
+contextual com geração de texto por modelos de linguagem  como ferramenta de mediação analítica para a investigação qualitativa de grandes
+corpora digitais (LEWIS et al., 2020; FAN et al., 2024).
+Dando continuidade ao PIBIC 2025, em execução, que desenvolveu infraestrutura de coleta e análise voltada à desinformação em saúde, a
+equipe de pesquisa desenvolveu e validou a arquitetura Social-RAG, um pipeline RAG modular projetado para a análise de dados do Telegram
+no âmbito das ciências sociais e humanas. O sistema implementa escolhas de design orientadas pela pesquisa social  como a política "um post =
+um chunk", indexação por embeddings semânticos, recuperação Adaptive-K, re-ranking por MMR e instruções analíticas estruturadas  e foi
+avaliado com três modelos distintos (local open-weight, cloud open-weight e cloud closed) através de protocolo com avaliadores humanos e LLM-
+as-judge. Os resultados demonstram que o Social-RAG opera de forma consistente em tarefas hermenêuticas e factuais, preservando
+rastreabilidade evidenciária e controle interpretativo (NASCIMENTO; BRASIL et al., 2025).
+O presente projeto avança sobre essa base ao propor a integração de Knowledge Graphs à arquitetura Social-RAG, permitindo mapear relações
+entre entidades (atores, organizações, eventos históricos), identificar claims recorrentes e rastrear a circulação transnacional de narrativas
+negacionistas. Essa extensão, já indicada como trabalho futuro no Social-RAG, é particularmente relevante para a análise histórica, pois permite
+reconstruir as redes de referência e as estratégias discursivas através das quais o passado é instrumentalizado em contextos de radicalização
+política (PAN et al., 2023; WANG et al., 2024).
+A proposta justifica-se, ainda, pela sua contribuição direta ao processo de ensino-aprendizagem e à formação acadêmica na UNILAB. No que diz
+respeito aos benefícios para os estudantes de graduação, os bolsistas vinculados ao projeto terão a oportunidade de desenvolver competências
+em letramento digital, programação Python, uso crítico de ferramentas de Inteligência Artificial e métodos computacionais aplicados às
+Humanidades  habilidades cada vez mais demandadas tanto na pesquisa acadêmica quanto no mercado de trabalho. A participação ativa em um
+projeto interinstitucional de alcance nacional e internacional, vinculado a financiamento do CNPq, permite aos estudantes vivenciar todas as
+etapas do fazer científico  da formulação de problemas à publicação de resultados  e fortalece sua inserção em redes de pesquisa consolidadas.
+O retorno para os cursos de graduação do Instituto de Humanidades e Letras é igualmente significativo: os materiais produzidos  tutoriais de
+métodos digitais, protocolos de análise de dados e estudos de caso sobre negacionismo histórico  poderão ser incorporados como recursos
+didáticos em disciplinas de metodologia de pesquisa, história contemporânea e humanidades digitais, enriquecendo o currículo com abordagens
+interdisciplinares e computacionais. Para os docentes da UNILAB, o projeto oferece um modelo replicável de integração entre IA e pesquisa em
+ciências humanas, podendo inspirar iniciativas semelhantes em outros grupos de pesquisa e áreas do conhecimento da instituição, além de
+fortalecer a cultura de pesquisa e a produção acadêmica coletiva da universidade.
+HIPÓTESE / PROBLEMATIZAÇÃO
+A pesquisa parte da hipótese de que os ecossistemas multiplataforma  com destaque para a articulação entre Telegram e YouTube  funcionam
+como infraestruturas complementares de produção, circulação e amplificação de narrativas de negacionismo histórico, articulando atores,
+conteúdos e estratégias discursivas que transcendem fronteiras nacionais e linguísticas. O Telegram opera como espaço de coordenação e
+redistribuição, enquanto o YouTube funciona como plataforma de elaboração narrativa em formato audiovisual, com vídeos que são
+sistematicamente compartilhados nos canais do Telegram. Diferentemente da desinformação conjuntural (sobre eventos correntes), o
+negacionismo histórico opera sobre um repertório relativamente estável de eventos e simbologias, o que permite a construção de Knowledge
+Graphs capazes de mapear a estrutura argumentativa e as redes de referência mobilizadas por esses grupos.
+A problematização central articula duas dimensões:
+Dimensão temática: De que maneira narrativas de negacionismo histórico  especialmente sobre a ditadura militar brasileira, a escravidão e
+eventos como o holocausto  são produzidas e compartilhadas no ecossistema Telegram-YouTube? Como os vídeos do YouTube são mobilizados
+e redistribuídos em canais do Telegram para reforçar enquadramentos negacionistas? Quais são os atores, as fontes e as estratégias discursivas
+centrais nesse processo? Existem convergências transnacionais entre grupos negacionistas de diferentes países?
+Dimensão metodológica: Em que medida arquiteturas de IA, como o Social-RAG integrado a Knowledge Graphs, podem auxiliar pesquisadores
+das humanidades na análise qualitativa de grandes volumes de dados digitais, preservando a rastreabilidade evidenciária, o controle
+interpretativo e a reflexividade crítica? Quais são os limites e as potencialidades dessas ferramentas para a investigação histórica em plataformas
+digitais?
+Objetivos
+Objetivo Geral
+Investigar as dinâmicas de produção, circulação e amplificação de narrativas de negacionismo histórico em ecossistemas digitais multiplataforma,
+com foco no Telegram, empregando a arquitetura Social-RAG integrada a Knowledge Graphs como ferramenta de mediação analítica no campo
+das Humanidades Digitais.
+Objetivos Específicos
+1. Identificar e mapear canais e grupos do Telegram que mobilizam narrativas de negacionismo histórico, bem como os vídeos do YouTube
+vinculados a esses canais, com ênfase em temáticas como a ditadura militar brasileira, a escravidão e o holocausto, a partir do corpus já coletado
+pelo projeto financiado CNPq/Decit/SECTICS/MS nº 30/2024;
+2. Aplicar a arquitetura Social-RAG ao corpus de dados coletados  incluindo mensagens do Telegram e transcrições/resumos de vídeos do
+YouTube  realizando consultas hermenêuticas e factuais para identificar padrões discursivos, enquadramentos narrativos e estratégias
+argumentativas do negacionismo histórico;
+3. Desenvolver e integrar módulos de Knowledge Graphs ao pipeline Social-RAG, permitindo a modelagem de relações entre entidades (atores,
+eventos históricos, organizações, fontes, vídeos) e a visualização de redes de referência mobilizadas nas narrativas negacionistas no
+ecossistema Telegram-YouTube;
+4. Analisar a dinâmica multiplataforma de compartilhamento e circulação das narrativas negacionistas, mapeando como conteúdos audiovisuais
+do YouTube são redistribuídos e ressignificados em canais do Telegram, e identificando fluxos transnacionais de informação;
+5. Produzir e disseminar resultados acadêmicos, incluindo artigos científicos, apresentações em eventos e materiais didáticos sobre métodos
+digitais aplicados à análise histórica.
+Metodologia
+A pesquisa adotará uma estratégia metodológica híbrida (quanti-quali), articulando métodos computacionais com análise qualitativa interpretativa,
+conforme o enquadramento das Humanidades Digitais e das Ciências Sociais Computacionais (SALGANIK, 2019; GRIMMER; ROBERTS;
+STEWART, 2022). O desenvolvimento se organizará em quatro eixos metodológicos:
+1. Curadoria e preparação do corpus
+A pesquisa utilizará o corpus de dados já coletado e em contínua expansão no âmbito do projeto financiado CNPq/Decit/SECTICS/MS nº
+30/2024, que dispõe de infraestrutura computacional para monitoramento e armazenamento de dados de múltiplas plataformas. O corpus
+compreende duas bases principais:
+- Telegram: dezenas de terabytes de mensagens coletadas via API oficial (MTProto), com scripts Python, armazenadas em cluster Elasticsearch
+para indexação e busca em tempo real. O corpus inclui texto, imagens, vídeos e áudio de milhares de canais e grupos públicos monitorados
+desde 2020;
+- YouTube: mais de 600 mil vídeos com metadados, transcrições e resumos, extraídos a partir dos links compartilhados nos canais do Telegram.
+Essa base permite rastrear a articulação multiplataforma, conectando os conteúdos audiovisuais às dinâmicas de circulação e redistribuição no
+Telegram.
+Para o recorte específico desta pesquisa, o bolsista participará da seleção e curadoria de subconjuntos temáticos do corpus, focalizando canais e
+grupos que mobilizam narrativas de negacionismo histórico, bem como os vídeos do YouTube associados. A seleção seguirá critérios de
+relevância temática (presença de termos e enquadramentos negacionistas), volume de atividade e alcance dos canais. Os dados serão
+organizados segundo o protocolo do Social-RAG, com metadados padronizados (message_id, chat_id, strict_date, type, chat_title), acrescidos
+dos metadados dos vídeos do YouTube (título, canal, transcrição, resumo, data de publicação).
+2. Aplicação e extensão do Social-RAG
+A análise será conduzida através da arquitetura Social-RAG, já desenvolvida e validada pela equipe. O pipeline será configurado para o corpus
+de negacionismo histórico, incluindo:
+- Chunking e indexação: cada mensagem do Telegram é tratada como uma unidade autônoma ("one post = one chunk"), preservando o contexto
+discursivo original;
+- Recuperação semântica: embeddings são gerados para cada mensagem e armazenados em banco vetorial (ChromaDB), permitindo buscas por
+similaridade semântica com recuperação Adaptive-K;
+- Re-ranking e diversificação: aplicação de Maximal Marginal Relevance (MMR) para equilibrar relevância e diversidade nos resultados
+recuperados;
+- Geração estruturada: utilização de instruções analíticas (system prompts) que orientam o modelo de linguagem a operar como analista
+interdisciplinar, com estágios explícitos para interpretação, seleção de evidências, análise crítica e síntese;
+- Interface Streamlit: acesso aos resultados via interface gráfica que permite consultas iterativas, registro de logs e exportação de dados.
+3. Integração de Knowledge Graphs
+O avanço metodológico central desta proposta é a integração de módulos de Knowledge Graphs ao pipeline Social-RAG. Essa extensão
+permitirá:
+- Extração de entidades nomeadas: identificação automatizada de atores (indivíduos, organizações, canais), eventos históricos, datas, locais e
+fontes mencionados nas mensagens;
+- Modelagem de relações: construção de grafos de conhecimento que representem as relações entre entidades, permitindo mapear redes de
+referência, cadeias argumentativas e padrões de coocorrência;
+- Recuperação informada por grafos (graph-informed retrieval): enriquecimento das consultas RAG com informações estruturadas dos Knowledge
+Graphs, aumentando a precisão e a contextualização das respostas;
+- Visualização: produção de visualizações interativas das redes de entidades e relações, facilitando a identificação de padrões estruturais nas
+narrativas negacionistas.
+A implementação utilizará bibliotecas Python de código aberto (NetworkX, Neo4j) e será integrada ao pipeline existente de forma modular,
+seguindo os princípios de reprodutibilidade e transparência metodológica (uso de Git/GitHub, documentação de decisões de design, princípios
+FAIR).
+4. Análise qualitativa interpretativa
+Os resultados computacionais serão submetidos a análise qualitativa interpretativa, orientada pela teoria fundamentada nos dados (CORBIN;
+STRAUSS, 2008) e por abordagens da história digital e da história pública. O bolsista participará ativamente da formulação de perguntas de
+pesquisa (queries), da avaliação crítica das respostas geradas pelo Social-RAG e da construção de categorias analíticas. Serão priorizadas
+questões hermenêuticas  que exigem interpretação de enquadramentos discursivos e dimensões ideológicas  e questões factuais  que
+demandam recuperação precisa de informações específicas.
+Questões éticas
+A pesquisa seguirá os protocolos éticos estabelecidos no projeto financiado, incluindo: coleta exclusiva de dados de canais e grupos públicos;
+anonimização de dados pessoais; respeito à Lei Geral de Proteção de Dados (LGPD); e adoção dos princípios de vigilância-como-método
+propostos por Salganik (2019) para pesquisa social na era digital. Os dados completos são acessados apenas sob controle institucional, e os
+resultados publicados utilizam amostras agregadas e anonimizadas.
+RESULTADOS ESPERADOS / METAS
+Resultados acadêmicos
+- Submissão de pelo menos 1 (um) artigo científico a periódico nacional ou internacional da área de Humanidades Digitais, História Digital ou
+Ciências Sociais Computacionais;
+- Apresentação de resultados no Encontro de Iniciação Científica da UNILAB (obrigatório) e em pelo menos 1 (um) evento científico nacional
+(como o Simpósio Nacional de História da ANPUH ou o Congresso da Associação Brasileira de Humanidades Digitais);
+- Contribuição para relatórios técnicos e produtos do projeto financiado CNPq/Decit/SECTICS/MS nº 30/2024.
+Resultados técnicos e metodológicos
+- Módulos de Knowledge Graphs integrados ao pipeline Social-RAG, com código aberto disponibilizado no GitHub da equipe;
+- Corpus curado e documentado de dados sobre negacionismo histórico no Telegram, acompanhado de Datasheet for Dataset (GEBRU et al.,
+2018) para transparência ética e metodológica;
+- Visualizações interativas das redes de entidades e relações identificadas nas narrativas negacionistas.
+Resultados de formação
+- Capacitação do(s) bolsista(s) em métodos digitais, programação Python, uso de ferramentas de IA e análise crítica de dados;
+- Formação em práticas de pesquisa reprodutível (Git/GitHub, documentação, princípios FAIR);
+- Desenvolvimento de competências em leitura e análise de fontes digitais para estudantes de graduação em Humanidades e Letras da UNILAB.
+VIABILIDADE E FINANCIAMENTO
+A viabilidade do projeto está assegurada pela sua vinculação a uma pesquisa em andamento, com infraestrutura, equipe e financiamento já
+estabelecidos. As atividades propostas para o PIBIC serão desenvolvidas no âmbito do projeto "Ecossistemas multiplataforma e ataques à
+integridade da informação em saúde: impactos, padrões de disseminação e estratégias de mitigação", financiado pela Chamada
+CNPq/Decit/SECTICS/MS nº 30/2024  Eixo I: Gestão da Infodemia (Processo 442958/2024-2), coordenado pelo Instituto de Saúde Coletiva (ISC)
+e pelo Laboratório de Humanidades Digitais da UFBA (LABHDUFBA).
+O projeto conta com:
+- Infraestrutura computacional: servidores de alta capacidade para armazenamento e processamento de dados, incluindo cluster Elasticsearch
+para indexação e busca em tempo real, mantidos pelo LABHDUFBA e pelo ISC/UFBA;
+- Ferramentas desenvolvidas: arquitetura Social-RAG já implementada e validada, com interface Streamlit operacional e acesso a modelos de
+linguagem (locais e via API);
+- Corpus de dados: base de dados em contínua expansão, incluindo dezenas de terabytes de mensagens do Telegram e mais de 600 mil vídeos
+do YouTube (com metadados, transcrições e resumos), coletados desde 2020;
+- Equipe interinstitucional: pesquisadores do LABHDUFBA (UFBA), PPGIHD (UFRRJ), e parceiros internacionais (Universidade de St. Gallen,
+Universidade de Alberta);
+- Cooperação técnica: doação de créditos da OpenAI para acesso à API do ChatGPT, cooperação com a FGV para formação de recursos
+humanos.
+Referências
+BOYD, danah; CRAWFORD, Kate. Critical questions for big data: provocations for a cultural, technological, and scholarly phenomenon.
+Information, Communication & Society, v. 15, n. 5, p. 662-679, 2012.
+BRASIL, Eric; NASCIMENTO, L. F. Por uma História Social Digital: o uso do CAQDAS na pesquisa e escrita da História. In: BARROS, José
+D'Assunção (Org.). História digital: A historiografia diante dos recursos e demandas de um novo tempo. Petrópolis, RJ: Editora Vozes, 2022. p.
+228-252.
+CESARINO, Letícia. Bolsonarismo sem Bolsonaro? Públicos antiestruturais na nova fronteira cibernética. Revista do Instituto de Estudos
+Brasileiros, p. 162-188, 2022.
+CORBIN, J.; STRAUSS, A. Basics of Qualitative Research (3rd ed.). California: SAGE Publications, 2008.
+FAN, Wei et al. A survey on RAG meeting LLMs: towards retrieval-augmented large language models. In: Proceedings of the 30th ACM SIGKDD
+Conference on Knowledge Discovery and Data Mining. New York: ACM, 2024. DOI: 10.1145/3637528.3671470.
+GEBRU, Timnit et al. Datasheets for Datasets. Proceedings of the 5th Workshop on Fairness, Accountability, and Transparency in Machine
+Learning, 2018.
+GRIMMER, J.; ROBERTS, M. E.; STEWART, B. M. Text as data: a new framework for machine learning and the social sciences. Princeton:
+Princeton University Press, 2022.
+LEWIS, Patrick et al. Retrieval-augmented generation for knowledge-intensive NLP tasks. In: Advances in Neural Information Processing Systems.
+Curran Associates, v. 33, p. 9459-9474, 2020.
+LUPTON, Deborah. Digital Sociology. London: Routledge, 2015.
+MARRES, Noortje. Digital Sociology: The Reinvention of Social Research. Cambridge: Polity Press, 2017.
+NASCIMENTO, L.; CESARINO, L.; FONSECA, P. Far-right publics on Brazilian Telegram: a mixed-methods approach to digital anthropology.
+UNESCO, LiiV Center for Innovating Digital Anthropology (USA), 2023.
+NASCIMENTO, L. et al. Públicos refratados: a atuação de grupos de extrema-direita brasileiros na plataforma Telegram. Revista Internet &
+Sociedade, v. 3, n. 1, p. 29, 2023.
+NASCIMENTO, L. F.; BRASIL, E. et al. Social-RAG: A Retrieval-Augmented Generation Pipeline for Computational Social Science Research on
+Telegram. Preprint, 2025.
+PAN, Shirui et al. Unifying large language models and knowledge graphs: a roadmap. arXiv preprint, arXiv:2306.08302, 2023.
+ROGERS, Richard. Deplatforming: Following Extreme Internet Celebrities to Telegram and Alternative Social Media. European Journal of
+Communication, v. 35, n. 3, p. 213-229, 2020.
+SALGANIK, Matthew J. Bit by Bit: Social Research in the Digital Age. Princeton: Princeton University Press, 2019.
+SCHWANDT, Silke. Opening the black box of interpretation: Digital history practices as models of knowledge. History and Theory, v. 61, n. 4, p.
+77-85, 2022.
+TÖRNBERG, Petter; CHUERI, Juliana. When Do Parties Lie? Misinformation and Radical-Right Populism Across 26 Countries. The International
+Journal of Press/Politics, 2025.
+URMAN, Aleksandra; AND KATZ, Stefan. What they do in the shadows: examining the far-right networks on Telegram. Information,
+Communication & Society, v. 25, n. 7, p. 904923, 19 maio 2022.
+WANG, Lei et al. A survey on large language model based autonomous agents. Frontiers of Computer Science, v. 18, 186345, 2024.
+Financiamentos
+Entidade Financiadora
+Natureza do Financiamento
+Data Inicio
+Data Fim
+Conselho Nacional de Desenvolvimento Científico e
+Tecnológico
+Auxilio Financeiro + Bolsa
+Não definido
+Não definido

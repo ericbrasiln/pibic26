@@ -5,7 +5,10 @@
 *.tex
 *.toc
 *.out
-chamada.md
 
-# Source PDFs in fontes/ (not needed in repo)
+# Source PDFs and extracted text (kept locally in fontes/)
 fontes/
+projeto_pesquisa.md
+plano01.md
+plano02.md
+chamada.md

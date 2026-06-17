@@ -40,9 +40,9 @@ O projeto foi aprovado com 2 cotas de bolsa FAPESB, cada uma vinculada a um plan
 - **Laboratórios envolvidos:** IHL/UNILAB (Malês) e LABHDUFBA (UFBA)
 - **Financiamento:** Projeto vinculado ao edital CNPq/Decit/SECTICS/MS nº 30/2024 — Eixo I: Gestão da Infodemia (Processo 442958/2024-2)
 
-- [Clique aqui](./projeto_pesquisa.pdf) para acessar o projeto de pesquisa completo.
-- [Clique aqui](./plano01.pdf) para acessar o plano de trabalho 1 (Social-RAG).
-- [Clique aqui](./plano02.pdf) para acessar o plano de trabalho 2 (Knowledge Graphs).
+- [Clique aqui](./projeto_pesquisa.html) para acessar o projeto de pesquisa completo.
+- [Clique aqui](./plano01.html) para acessar o plano de trabalho 1 (Social-RAG).
+- [Clique aqui](./plano02.html) para acessar o plano de trabalho 2 (Knowledge Graphs).
 
 ---
 
