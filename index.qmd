@@ -162,3 +162,5 @@ A bolsa PIBIC/FAPESB é fomentada pela Fundação de Amparo à Pesquisa do Estad
 - Apresentar os resultados da pesquisa no Evento de Iniciação Científica da UNILAB.
 
 Para dúvidas: [profericbrasil@unilab.edu.br](mailto:profericbrasil@unilab.edu.br)
+
+![](./card.png)
