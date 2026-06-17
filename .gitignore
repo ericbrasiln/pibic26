@@ -8,6 +8,7 @@
 
 # Source PDFs and extracted text (kept locally in fontes/)
 fontes/
+*.pdf
 projeto_pesquisa.md
 plano01.md
 plano02.md
