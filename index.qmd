@@ -1,5 +1,5 @@
 ---
-title: 'Chamada para Seleção de Bolsistas PIBIC/FAPESB — Edital PROPPG 08/2026'
+title: 'Chamada para Seleção de Bolsista PIBIC/FAPESB — Edital PROPPG 08/2026'
 subtitle: "Projeto: Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma"
 author:
     - name: Eric Brasil
@@ -8,7 +8,7 @@ author:
 date: today
 lang: pt-BR
 institute: "Instituto de Humanidades e Letras, UNILAB"
-description: "Chamada para seleção de 2 bolsistas PIBIC/FAPESB para o projeto PVM2451-2026."
+description: "Chamada para seleção de 1 bolsista PIBIC/FAPESB para o projeto PVM2451-2026, plano de trabalho: Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG."
 toc: true
 toc-title: "Sumário"
 toc-depth: 4
@@ -23,16 +23,13 @@ highlight-style: tango
 
 ## Informações Gerais
 
-A Coordenação do projeto de pesquisa **PVM2451-2026** — *"Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma"* convida estudantes de graduação do Instituto de Humanidades e Letras da UNILAB a se candidatarem a **2 (duas) vagas de bolsista de Iniciação Científica** no âmbito do Edital PROPPG nº 08/2026 — PIBIC/FAPESB.
+A Coordenação do projeto de pesquisa **PVM2451-2026** — *"Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma"* convida estudantes de graduação do Instituto de Humanidades e Letras da UNILAB a se candidatarem a **1 (uma) vaga de bolsista de Iniciação Científica** no âmbito do Edital PROPPG nº 08/2026 — PIBIC/FAPESB.
 
-O projeto foi aprovado com 2 cotas de bolsa FAPESB, cada uma vinculada a um plano de trabalho distinto. A seleção é unificada: a candidatura é feita para o projeto, e a atribuição dos planos ocorrerá conforme o perfil e a adequação de cada pessoa selecionada.
+O projeto foi aprovado com cotas de bolsa FAPESB. A presente chamada refere-se ao plano de trabalho:
+
+**Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG**
 
 **Título do Projeto:** *Inteligência Artificial aplicada às Humanidades Digitais: Social-RAG e Knowledge Graphs para análise de negacionismo histórico em ecossistemas multiplataforma*
-
-**Planos de Trabalho:**
-
-1. **Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG**
-2. **Modelagem relacional e construção de Knowledge Graphs para análise de narrativas de negacionismo histórico em plataformas digitais**
 
 - **Modalidade:** PIBIC/FAPESB
 - **Vigência:** 01/10/2026 a 30/09/2027
@@ -43,8 +40,7 @@ O projeto foi aprovado com 2 cotas de bolsa FAPESB, cada uma vinculada a um plan
 - **Financiamento:** Projeto vinculado ao edital CNPq/Decit/SECTICS/MS nº 30/2024 — Eixo I: Gestão da Infodemia (Processo 442958/2024-2)
 
 - [Clique aqui](./projeto_pesquisa.html) para acessar o projeto de pesquisa completo.
-- [Clique aqui](./plano01.html) para acessar o plano de trabalho 1 (Social-RAG).
-- [Clique aqui](./plano02.html) para acessar o plano de trabalho 2 (Knowledge Graphs).
+- [Clique aqui](./plano01.html) para acessar o plano de trabalho.
 
 ---
 
@@ -94,12 +90,10 @@ Buscamos estudantes **proativos, abertos a aprender e dispostos a trabalhar em e
 
 - Motivação e disponibilidade real para a carga horária exigida.
 - Perfil colaborativo e abertura para aprender.
-- Adequação ao perfil de cada plano de trabalho.
+- Adequação ao perfil do plano de trabalho.
 - Capacidade de trabalhar sob supervisão de mestrandos e doutorandos.
-- Compromisso com prazos e demandas regulares..
+- Compromisso com prazos e demandas regulares.
 - Concordar em assinar termo de confidencialidade da pesquisa, caso selecionado(a).
-
-A atribuição dos planos de trabalho (1 — Social-RAG ou 2 — Knowledge Graphs) será definida pelo orientador com base no perfil da pessoa selecionada e nas necessidades do projeto.
 
 ---
 
@@ -108,13 +102,32 @@ A atribuição dos planos de trabalho (1 — Social-RAG ou 2 — Knowledge Graph
 - **Abertura da chamada**: **19/06/2026**
 - **Inscrições**: até **26/06/2026, 23h59**
     - Enviar os seguintes documentos para [profericbrasil@unilab.edu.br](mailto:profericbrasil@unilab.edu.br):
-      - Carta de interesse (em um dos seguintes formatos: .md, .txt, .odt ou .pdf): explicando motivação, afinidade e disponibilidade de participar da pesquisa e preferência de plano (se houver)
+      - Carta de interesse (em um dos seguintes formatos: .md, .txt, .odt ou .pdf): explicando motivação, afinidade e disponibilidade de participar da pesquisa
       - Histórico escolar (PDF)
       - Currículo Lattes atualizado (PDF)
 - **Resultado da 1ª fase (eliminatória)**: enviado por email até **29/06/2026, até 18h**
 - **Entrevistas**: **Data a ser divulgada após a 1ª fase** (via Google Meet; horários a definir conforme número de classificados)
 - **Resultado final**: **A ser divulgado após as entrevistas**
 - **Entrega da documentação completa para implementação da bolsa (conforme edital institucional)**: **29/06 a 14/07/2026**
+
+---
+
+## Detalhes do Plano de Trabalho
+
+### Curadoria de corpus e análise de negacionismo histórico no ecossistema Telegram-YouTube com Social-RAG
+
+O plano tem como objetivo realizar a curadoria de subconjuntos temáticos do corpus Telegram-YouTube e aplicar a arquitetura Social-RAG para identificar e analisar padrões discursivos, enquadramentos narrativos e estratégias argumentativas do negacionismo histórico em ecossistemas digitais multiplataforma.
+
+**Atividades principais:**
+
+- Identificação e mapeamento de canais e grupos do Telegram que mobilizam narrativas de negacionismo histórico, bem como os vídeos do YouTube vinculados.
+- Seleção, organização e padronização de subconjuntos temáticos do corpus segundo o protocolo do Social-RAG.
+- Formulação e execução de consultas hermenêuticas e factuais no Social-RAG.
+- Análise qualitativa dos resultados, com construção de categorias analíticas fundamentadas nos dados.
+- Redação de artigo acadêmico como primeiro autor(a).
+- Apresentação de resultados no Encontro de Iniciação Científica da UNILAB.
+
+**Capacitação prevista:** Python, Git/GitHub e operação do Social-RAG (3 primeiros meses).
 
 ---
 
@@ -127,9 +140,8 @@ A bolsa PIBIC/FAPESB é fomentada pela Fundação de Amparo à Pesquisa do Estad
 - Cadastro no SEI Bahia.
 - Conta corrente no Banco do Brasil (para depósito da bolsa).
 - Currículo Lattes atualizado no ano da implementação da bolsa.
-- Não acumular outra bolsa de mesmo nível financiada com recursos públicos durante a vigência.
+- Não acumular outra bolsa de **mesmo nível** financiada com recursos públicos durante a vigência (bolsas de mestrado e doutorado são de nível diferente e não configuram acumulação vedada, conforme Resolução FAPESB nº 002/2025, art. 18.1).
 - Entregar relatório parcial (01/04/2027) e relatório final (01/10/2027) via SIGAA.
 - Apresentar os resultados da pesquisa no Evento de Iniciação Científica da UNILAB.
 
 Para dúvidas: [profericbrasil@unilab.edu.br](mailto:profericbrasil@unilab.edu.br)
-
