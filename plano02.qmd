@@ -15,167 +15,119 @@ theme:
 highlight-style: tango
 ---
 
-CORPO DO PLANO DE TRABALHO
-Título
+## Título
+
 Modelagem relacional e construção de Knowledge Graphs para análise de narrativas de negacionismo histórico em plataformas digitais
-Introdução e Justificativa
-A análise de narrativas de negacionismo histórico em ecossistemas digitais multiplataforma demanda abordagens que ultrapassem a análise textual isolada, permitindo mapear as
-relações entre atores, eventos, fontes e plataformas que sustentam a circulação desses discursos. Knowledge Graphs — estruturas de representação de conhecimento que modelam
-entidades e suas relações em grafos — oferecem uma camada analítica complementar aos métodos de recuperação e geração de texto, como os sistemas de Retrieval-Augmented
-Generation (RAG), ao permitir a visualização de padrões estruturais, a identificação de nós centrais e o rastreamento de fluxos de informação entre diferentes plataformas e
-contextos (PAN et al., 2023).
-No âmbito das ciências humanas, a combinação entre modelos de linguagem e Knowledge Graphs é particularmente promissora para problemas que exigem análise relacional —
-como a identificação de redes de referência entre grupos extremistas, o mapeamento de como eventos históricos são mobilizados por diferentes atores, e a detecção de
-convergências transnacionais no negacionismo histórico (NASCIMENTO et al., 2023; CESARINO, 2022). Essa abordagem permite avançar da análise de conteúdo isolado para a
-compreensão das estruturas relacionais que sustentam a produção e circulação de narrativas negacionistas no ecossistema Telegram-YouTube.
-O presente plano integra o projeto financiado pelo edital CNPq/Decit/SECTICS/MS Nº 30/2024, em parceria com a UFBA, liderado pelo Instituto de Saúde Coletiva e pelo Laboratório
-de Humanidades Digitais da UFBA (LABHDUFBA), com participação ativa da UNILAB. A equipe desenvolveu e validou a arquitetura Social-RAG, um pipeline RAG modular para
-análise de dados do Telegram, que indicou como trabalho futuro a integração de Knowledge Graphs para conectar entidades, atores e claims recorrentes (NASCIMENTO; BRASIL et
-al., 2025). O presente plano avança nessa direção, propondo que o bolsista participe da extração de entidades, modelagem de relações e construção exploratória de grafos de
-conhecimento aplicados ao negacionismo histórico.
-O projeto dispõe de um corpus robusto que inclui dezenas de terabytes de mensagens do Telegram e mais de 600 mil vídeos do YouTube (com metadados, transcrições e resumos).
-Essa base permite não apenas a análise textual, mas também o mapeamento das articulações entre plataformas — como os vídeos do YouTube são redistribuídos e ressignificados
-em canais do Telegram, e quais atores e fontes funcionam como nós centrais nas redes de disseminação do negacionismo histórico.
-Além de contribuir para a formação teórica e metodológica do(a) estudante de iniciação científica da UNILAB, o plano fortalece o papel do Instituto de Humanidades e Letras na
-pesquisa interdisciplinar que articula humanidades digitais, análise de dados e inteligência artificial, preparando o estudante para os desafios da pesquisa em ciências humanas na
-era digital.
-Objetivos
-Objetivo geral
-Desenvolver e aplicar módulos de Knowledge Graphs integrados ao pipeline Social-RAG para modelar relações entre entidades (atores, eventos históricos, organizações, fontes,
-vídeos) e visualizar as redes de referência mobilizadas nas narrativas de negacionismo histórico no ecossistema Telegram-YouTube.
-Objetivos específicos
-a) Identificar e definir as entidades de interesse (atores, eventos históricos, datas, organizações, canais do Telegram, vídeos do YouTube) e as relações relevantes entre elas no
-corpus sobre negacionismo histórico;
+
+---
+
+## Introdução e Justificativa
+
+A análise de narrativas de negacionismo histórico em ecossistemas digitais multiplataforma demanda abordagens que ultrapassem a análise textual isolada, permitindo mapear as relações entre atores, eventos, fontes e plataformas que sustentam a circulação desses discursos. Knowledge Graphs — estruturas de representação de conhecimento que modelam entidades e suas relações em grafos — oferecem uma camada analítica complementar aos métodos de recuperação e geração de texto, como os sistemas de Retrieval-Augmented Generation (RAG), ao permitir a visualização de padrões estruturais, a identificação de nós centrais e o rastreamento de fluxos de informação entre diferentes plataformas e contextos (PAN et al., 2023).
+
+No âmbito das ciências humanas, a combinação entre modelos de linguagem e Knowledge Graphs é particularmente promissora para problemas que exigem análise relacional — como a identificação de redes de referência entre grupos extremistas, o mapeamento de como eventos históricos são mobilizados por diferentes atores, e a detecção de convergências transnacionais no negacionismo histórico (NASCIMENTO et al., 2023; CESARINO, 2022). Essa abordagem permite avançar da análise de conteúdo isolado para a compreensão das estruturas relacionais que sustentam a produção e circulação de narrativas negacionistas no ecossistema Telegram-YouTube.
+
+O presente plano integra o projeto financiado pelo edital CNPq/Decit/SECTICS/MS Nº 30/2024, em parceria com a UFBA, liderado pelo Instituto de Saúde Coletiva e pelo Laboratório de Humanidades Digitais da UFBA (LABHDUFBA), com participação ativa da UNILAB. A equipe desenvolveu e validou a arquitetura Social-RAG, um pipeline RAG modular para análise de dados do Telegram, que indicou como trabalho futuro a integração de Knowledge Graphs para conectar entidades, atores e claims recorrentes (NASCIMENTO; BRASIL et al., 2025). O presente plano avança nessa direção, propondo que o bolsista participe da extração de entidades, modelagem de relações e construção exploratória de grafos de conhecimento aplicados ao negacionismo histórico.
+
+O projeto dispõe de um corpus robusto que inclui dezenas de terabytes de mensagens do Telegram e mais de 600 mil vídeos do YouTube (com metadados, transcrições e resumos). Essa base permite não apenas a análise textual, mas também o mapeamento das articulações entre plataformas — como os vídeos do YouTube são redistribuídos e ressignificados em canais do Telegram, e quais atores e fontes funcionam como nós centrais nas redes de disseminação do negacionismo histórico.
+
+Além de contribuir para a formação teórica e metodológica do(a) estudante de iniciação científica da UNILAB, o plano fortalece o papel do Instituto de Humanidades e Letras na pesquisa interdisciplinar que articula humanidades digitais, análise de dados e inteligência artificial, preparando o estudante para os desafios da pesquisa em ciências humanas na era digital.
+
+---
+
+## Objetivo geral
+
+Desenvolver e aplicar módulos de Knowledge Graphs integrados ao pipeline Social-RAG para modelar relações entre entidades (atores, eventos históricos, organizações, fontes, vídeos) e visualizar as redes de referência mobilizadas nas narrativas de negacionismo histórico no ecossistema Telegram-YouTube.
+
+## Objetivos específicos
+
+a) Identificar e definir as entidades de interesse (atores, eventos históricos, datas, organizações, canais do Telegram, vídeos do YouTube) e as relações relevantes entre elas no corpus sobre negacionismo histórico;
+
 b) Elaborar esquemas de representação relacional, definindo tipologias de nós e arestas adequadas à modelagem das narrativas negacionistas;
+
 c) Extrair entidades e relações a partir de mensagens do Telegram e transcrições/resumos de vídeos do YouTube, utilizando ferramentas de NLP e o Social-RAG como apoio;
-d) Construir Knowledge Graphs exploratórios e produzir visualizações interativas que evidenciem padrões estruturais, nós centrais e fluxos de circulação nas narrativas
-negacionistas;
+
+d) Construir Knowledge Graphs exploratórios e produzir visualizações interativas que evidenciem padrões estruturais, nós centrais e fluxos de circulação nas narrativas negacionistas;
+
 e) Avaliar criticamente a utilidade e os limites dos Knowledge Graphs para a análise histórica, preservando a centralidade interpretativa do pesquisador.
-Metodologia
+
+---
+
+## Metodologia
+
 A pesquisa será estruturada em três etapas integradas, articulando métodos computacionais com análise crítica das Humanidades Digitais:
+
 1. Definição de entidades e modelagem relacional:
-O bolsista trabalhará sobre os subconjuntos do corpus curados no âmbito do primeiro plano de trabalho. As atividades incluem: estudo do corpus e identificação das entidades
-relevantes (atores, eventos históricos, datas, organizações, canais, vídeos); definição das relações de interesse (ex.: "ator X cita evento Y", "canal A compartilha vídeo B", "grupo C
-referencia fonte D"); e elaboração de esquemas de representação relacional com tipologias de nós e arestas.
+O bolsista trabalhará sobre os subconjuntos do corpus curados no âmbito do primeiro plano de trabalho. As atividades incluem: estudo do corpus e identificação das entidades relevantes (atores, eventos históricos, datas, organizações, canais, vídeos); definição das relações de interesse (ex.: "ator X cita evento Y", "canal A compartilha vídeo B", "grupo C referencia fonte D"); e elaboração de esquemas de representação relacional com tipologias de nós e arestas.
+
 2. Extração de entidades e construção de Knowledge Graphs:
-O bolsista utilizará ferramentas de Processamento de Linguagem Natural (NLP) e o Social-RAG como apoio para extrair entidades nomeadas e relações a partir de mensagens do
-Telegram e transcrições de vídeos do YouTube. Os dados extraídos serão estruturados em grafos de conhecimento utilizando bibliotecas Python de código aberto (NetworkX, Neo4j).
-A construção será exploratória e iterativa, com validação qualitativa pelo bolsista e pelo orientador.
+O bolsista utilizará ferramentas de Processamento de Linguagem Natural (NLP) e o Social-RAG como apoio para extrair entidades nomeadas e relações a partir de mensagens do Telegram e transcrições de vídeos do YouTube. Os dados extraídos serão estruturados em grafos de conhecimento utilizando bibliotecas Python de código aberto (NetworkX, Neo4j). A construção será exploratória e iterativa, com validação qualitativa pelo bolsista e pelo orientador.
+
 3. Visualização e análise relacional:
-O bolsista produzirá visualizações interativas dos Knowledge Graphs, facilitando a identificação de: nós centrais (atores e fontes mais referenciados); clusters temáticos
-(agrupamentos de narrativas sobre eventos específicos); fluxos multiplataforma (como vídeos do YouTube circulam entre canais do Telegram); e convergências transnacionais. Os
-resultados serão analisados criticamente à luz da historiografia e da literatura sobre extremismo digital.
-O bolsista receberá capacitação em fundamentos de Python, Git/GitHub, NetworkX e ferramentas de NLP nos três primeiros meses. A pesquisa seguirá os protocolos éticos do
-projeto financiado, incluindo coleta exclusiva de dados públicos, anonimização e respeito à LGPD. Todo o código e documentação serão versionados no GitHub, seguindo os
-princípios FAIR.
-Resultados Esperados
+O bolsista produzirá visualizações interativas dos Knowledge Graphs, facilitando a identificação de: nós centrais (atores e fontes mais referenciados); clusters temáticos (agrupamentos de narrativas sobre eventos específicos); fluxos multiplataforma (como vídeos do YouTube circulam entre canais do Telegram); e convergências transnacionais. Os resultados serão analisados criticamente à luz da historiografia e da literatura sobre extremismo digital.
+
+O bolsista receberá capacitação em fundamentos de Python, Git/GitHub, NetworkX e ferramentas de NLP nos três primeiros meses. A pesquisa seguirá os protocolos éticos do projeto financiado, incluindo coleta exclusiva de dados públicos, anonimização e respeito à LGPD. Todo o código e documentação serão versionados no GitHub, seguindo os princípios FAIR.
+
+---
+
+## Resultados Esperados
+
 a) Esquema de representação relacional definido, com tipologias de entidades e relações adequadas à análise do negacionismo histórico no ecossistema Telegram-YouTube;
+
 b) Conjunto de entidades e relações extraídas do corpus, estruturado para alimentar os Knowledge Graphs;
-c) Knowledge Graphs exploratórios construídos, com visualizações interativas que evidenciem padrões estruturais das narrativas negacionistas (nós centrais, clusters temáticos,
-fluxos multiplataforma);
+
+c) Knowledge Graphs exploratórios construídos, com visualizações interativas que evidenciem padrões estruturais das narrativas negacionistas (nós centrais, clusters temáticos, fluxos multiplataforma);
+
 d) Avaliação crítica da utilidade e dos limites dos Knowledge Graphs para a análise histórica, documentada em relatório;
+
 e) Redação de artigo acadêmico para submissão em periódico ou evento científico, apresentando os principais achados da pesquisa;
+
 f) Apresentação de resultados como primeiro autor no Encontro de Iniciação Científica da UNILAB;
+
 g) Código e documentação dos módulos de Knowledge Graphs disponibilizados no GitHub, seguindo princípios de reprodutibilidade e transparência.
-Referências
-BOYD, danah; CRAWFORD, Kate. Critical questions for big data: provocations for a cultural, technological, and scholarly phenomenon. Information, Communication & Society, v. 15,
-n. 5, p. 662-679, 2012.
-BRASIL, Eric; NASCIMENTO, L. F. Por uma História Social Digital: o uso do CAQDAS na pesquisa e escrita da História. In: BARROS, José D'Assunção (Org.). História digital: A
-historiografia diante dos recursos e demandas de um novo tempo. Petrópolis, RJ: Editora Vozes, 2022. p. 228-252.
+
+---
+
+## Referências
+
+BOYD, danah; CRAWFORD, Kate. Critical questions for big data: provocations for a cultural, technological, and scholarly phenomenon. Information, Communication & Society, v. 15, n. 5, p. 662-679, 2012.
+
+BRASIL, Eric; NASCIMENTO, L. F. Por uma História Social Digital: o uso do CAQDAS na pesquisa e escrita da História. In: BARROS, José D'Assunção (Org.). História digital: A historiografia diante dos recursos e demandas de um novo tempo. Petrópolis, RJ: Editora Vozes, 2022. p. 228-252.
+
 CESARINO, Letícia. Bolsonarismo sem Bolsonaro? Públicos antiestruturais na nova fronteira cibernética. Revista do Instituto de Estudos Brasileiros, p. 162-188, 2022.
-CORBIN, J.; STRAUSS, A. Basics of Qualitative Research (3rd ed.). California: SAGE Publications, 2008.
-FAN, Wei et al. A survey on RAG meeting LLMs: towards retrieval-augmented large language models. In: Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery
-and Data Mining. New York: ACM, 2024. DOI: 10.1145/3637528.3671470.
-GEBRU, Timnit et al. Datasheets for Datasets. Proceedings of the 5th Workshop on Fairness, Accountability, and Transparency in Machine Learning, 2018.
+
 GRIMMER, J.; ROBERTS, M. E.; STEWART, B. M. Text as data: a new framework for machine learning and the social sciences. Princeton: Princeton University Press, 2022.
-LEWIS, Patrick et al. Retrieval-augmented generation for knowledge-intensive NLP tasks. In: Advances in Neural Information Processing Systems. Curran Associates, v. 33, p.
-9459-9474, 2020.
-LUPTON, Deborah. Digital Sociology. London: Routledge, 2015.
-MARRES, Noortje. Digital Sociology: The Reinvention of Social Research. Cambridge: Polity Press, 2017.
-NASCIMENTO, L.; CESARINO, L.; FONSECA, P. Far-right publics on Brazilian Telegram: a mixed-methods approach to digital anthropology. UNESCO, LiiV Center for Innovating
-Digital Anthropology (USA), 2023.
-NASCIMENTO, L. et al. Públicos refratados: a atuação de grupos de extrema-direita brasileiros na plataforma Telegram. Revista Internet & Sociedade, v. 3, n. 1, p. 29, 2023.
+
+NASCIMENTO, L.; CESARINO, L.; FONSECA, P. Far-right publics on Brazilian Telegram: a mixed-methods approach to digital anthropology. UNESCO, LiiV Center for Innovating Digital Anthropology (USA), 2023.
+
 NASCIMENTO, L. F.; BRASIL, E. et al. Social-RAG: A Retrieval-Augmented Generation Pipeline for Computational Social Science Research on Telegram. Preprint, 2025.
+
 PAN, Shirui et al. Unifying large language models and knowledge graphs: a roadmap. arXiv preprint, arXiv:2306.08302, 2023.
-ROGERS, Richard. Deplatforming: Following Extreme Internet Celebrities to Telegram and Alternative Social Media. European Journal of Communication, v. 35, n. 3, p. 213-229,
-2020.
+
 SALGANIK, Matthew J. Bit by Bit: Social Research in the Digital Age. Princeton: Princeton University Press, 2019.
+
 SCHWANDT, Silke. Opening the black box of interpretation: Digital history practices as models of knowledge. History and Theory, v. 61, n. 4, p. 77-85, 2022.
+
 TÖRNBERG, Petter; CHUERI, Juliana. When Do Parties Lie? Misinformation and Radical-Right Populism Across 26 Countries. The International Journal of Press/Politics, 2025.
+
 WANG, Lei et al. A survey on large language model based autonomous agents. Frontiers of Computer Science, v. 18, 186345, 2024.
-CRONOGRAMA DE ATIVIDADES
-Atividade
-2026
-2027
-Set
-Out
-Nov
-Dez
-Jan
-Fev
-Mar
-Abr
-Mai
-Jun
-Jul
-Ago
-Set
-REVISÃO BIBLIOGRÁFICA SOBRE KNOWLEDGE
-GRAPHS, NLP E IA APLICADA ÀS
-HUMANIDADES
-  X
-  X
-CAPACITAÇÃO EM PYTHON, NETWORKX, NEO4J
-E FERRAMENTAS DE NLP
-  X
-  X
-ESTUDO DO CORPUS E DEFINIÇÃO DE
-ENTIDADES E RELAÇÕES DE INTERESSE
-  X
-  X
-  X
-ELABORAÇÃO DE ESQUEMA DE
-REPRESENTAÇÃO RELACIONAL
-  X
-  X
-EXTRAÇÃO DE ENTIDADES E RELAÇÕES (NLP +
-SOCIAL-RAG)
-  X
-  X
-CONSTRUÇÃO EXPLORATÓRIA DE KNOWLEDGE
-GRAPHS
-  X
-  X
-PRODUÇÃO DE VISUALIZAÇÕES INTERATIVAS
-DOS GRAFOS
-  X
-  X
-AVALIAÇÃO CRÍTICA DA UTILIDADE DOS KG
-PARA ANÁLISE HISTÓRICA
-  X
-  X
-REDAÇÃO DE ARTIGO E RELATÓRIOS
-  X
-  X
-  X
-APRESENTAÇÃO NO ENCONTRO DE IC DA
-UNILAB
-  X
-DOCUMENTAÇÃO (GITHUB) E ELABORAÇÃO DO
-RELATÓRIO FINAL
-  X
-  X
-  X
-REUNIÕES DE ORIENTAÇÃO
-  X
-  X
-  X
-  X
-  X
-  X
-  X
-  X
-  X
-  X
-  X
-  X
+
+---
+
+## Cronograma de Atividades
+
+| Atividade | M1 | M2 | M3 | M4 | M5 | M6 | M7 | M8 | M9 | M10 | M11 | M12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| REVISÃO BIBLIOGRÁFICA SOBRE KNOWLEDGE GRAPHS, NLP E IA APLICADA ÀS HUMANIDADES | X | X | X | | | | | | | | | |
+| CAPACITAÇÃO EM PYTHON, NETWORKX, NEO4J E FERRAMENTAS DE NLP | X | X | X | | | | | | | | | |
+| ESTUDO DO CORPUS E DEFINIÇÃO DE ENTIDADES E RELAÇÕES DE INTERESSE | | X | X | X | | | | | | | | |
+| ELABORAÇÃO DE ESQUEMA DE REPRESENTAÇÃO RELACIONAL | | | X | X | X | | | | | | | |
+| EXTRAÇÃO DE ENTIDADES E RELAÇÕES (NLP + SOCIAL-RAG) | | | | X | X | X | | | | | | |
+| CONSTRUÇÃO EXPLORATÓRIA DE KNOWLEDGE GRAPHS | | | | | X | X | X | X | | | | |
+| PRODUÇÃO DE VISUALIZAÇÕES INTERATIVAS DOS GRAFOS | | | | | | | X | X | X | | | |
+| AVALIAÇÃO CRÍTICA DA UTILIDADE DOS KG PARA ANÁLISE HISTÓRICA | | | | | | | | X | X | X | | |
+| REDAÇÃO DE ARTIGO E RELATÓRIOS | | | | | | | | | X | X | X | |
+| APRESENTAÇÃO NO ENCONTRO DE IC DA UNILAB | | | | | | | | | | | X | |
+| DOCUMENTAÇÃO (GITHUB) E ELABORAÇÃO DO RELATÓRIO FINAL | | | | | | | | | | | X | X |
+| REUNIÕES DE ORIENTAÇÃO | X | X | X | X | X | X | X | X | X | X | X | X |
+| TREINAMENTOS TÉCNICOS | X | X | | | | X | | | | X | | |
